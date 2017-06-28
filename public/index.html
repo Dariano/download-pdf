@@ -1,0 +1,19 @@
+<html data-ng-app="app">
+<head>
+    <meta name="viewport", content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Teste download pdf</title>
+
+
+    <script src="./bower_components/angular/angular.js"></script>
+
+
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div ng-controller="pdfController as pdf">
+        <button type="button" ng-click="pdf.download()">Baixar PDF</button>
+    </div>
+    
+</body>
+</html>

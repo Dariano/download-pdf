@@ -9,10 +9,6 @@ app.set('views', './public/index.html');
 
 app.use(require('method-override')());
 
-app.get('/', (req, res) => {
-    res.send('Feito!')
-})
-
 app.get('/pdf', (req, res) => {
     let file = fs.createReadStream('./arquivo/download.pdf');
     let stat = fs.statSync('./arquivo/download.pdf');
